@@ -1,1 +1,32 @@
+body {
+font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+margin: 0;
+background: linear-gradient(to bottom, #e0f7ff, #ffffff);
+text-align: center;
+}
 
+h1 {
+margin: 12px 0;
+}
+
+#map {
+height: 420px;
+width: 92%;
+margin: 0 auto;
+border-radius: 14px;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#infoBox {
+width: 92%;
+margin: 18px auto;
+padding: 16px;
+background: white;
+border-radius: 14px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#pokeName {
+margin: 0;
+color: #ff4d6d;
+}
