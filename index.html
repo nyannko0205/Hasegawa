@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<title>ご当地ポケモンマップ🗾</title>
-<link
-rel="stylesheet"
-href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-/>
+  <meta charset="UTF-8" />
+  <title>ご当地ポケモンマップ🗾</title>
+
+  <!-- Leaflet CSS（必須） -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+
+  <!-- 自分のCSS（相対パスで読み込む） -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<h1>ご当地ポケモンマップ </h1>
-<div id="map"></div>
+  <h1>ご当地ポケモンマップ</h1>
+  <div id="map"></div>
 
-<div id="infoBox">
-<h2 id="pokeName">ポケモンを選んでね！</h2>
-<p id="pokeDesc">地図のマーカーをクリックすると詳細が表示されます。</p>
-</div>
+  <div id="infoBox">
+    <h2 id="pokeName">ポケモンを選んでね！</h2>
+    <p id="pokeDesc">地図のマーカーをクリックすると詳細が表示されます。</p>
+  </div>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Leaflet JS を先に -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+    defer
+  ></script>
+
+  <!-- 自分のJS（Leafletの後・相対パス・defer） -->
+  <script src="./script.js" defer></script>
 </body>
 </html>
